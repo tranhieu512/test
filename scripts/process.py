@@ -8,6 +8,7 @@ from datetime import datetime
 EPG_TVG_URLS = [
     "https://vnepg.site/epg.xml",
     "https://lichphatsong.site/schedule/epg.xml.gz",
+]
 # Nối các URL và phân tách bằng dấu (;)
     EPG_URL_STRING=";".join(EPG_TVG_URLS)
 
