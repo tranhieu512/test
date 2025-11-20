@@ -2,9 +2,9 @@ name: Auto Update MIN (Python) 🔄
 
 # Cấu hình các Trigger (Sự kiện kích hoạt)
 on:
-  # Chạy mỗi 5 phút (Như code cũ của bạn)
+  # Chạy mỗi 1 giờ
   schedule:
-    - cron: '*/5 * * * *' 
+    - cron: '*/30 * * * *' 
   workflow_dispatch: {}
 
 env:
