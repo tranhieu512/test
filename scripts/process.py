@@ -17,7 +17,7 @@ SOURCES = [
      
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'"VTVcab"', 
-     "hóm Kênh VTVcab"),
+     "Nhóm Kênh VTVcab"),
 
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'"SCTV"', 
