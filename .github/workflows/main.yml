@@ -30,7 +30,7 @@ jobs:
         
       - name: ⚙️ Run Python script (Process M3U)
         # Chạy script Python để tải, lọc và tạo file MIN.m3u
-        run: python scripts/process_m3u.py
+        run: python scripts/process.py
         
       - name: ⏱️ GetTime for Commit Message
         run: echo "DATE=$(date +'%Y-%m-%d %H:%M:%S GMT+7')" >> $GITHUB_ENV
