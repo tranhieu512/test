@@ -32,7 +32,7 @@ SOURCES = [
      "In The Box"),
     
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
-     r'tvg-id="hbohd"|,tvg-id="afnhd"|,tvg-id="cinemaxhd"', 
+     r'tvg-id="hbohd"|tvg-id="afnhd"|tvg-id="cinemaxhd"', 
      "Nhóm Kênh Quốc Tế"),
     
 
