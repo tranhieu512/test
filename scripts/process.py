@@ -42,7 +42,7 @@ SOURCES = [
 ]
 
 FINAL_OUTPUT_FILE = "MIN.m3u"
-ALL_M3U_LINES = ["#EXTM3U url-tvg="https://vnepg.site/epg.xml\n"] # Dòng header đầu tiên
+ALL_M3U_LINES = ["#EXTM3U url-tvg="https://vnepg.site/epg.xml"\n"] # Dòng header đầu tiên
 
 def fetch_and_process_m3u(url, filter_regex, new_group_title):
     """Tải file M3U, lọc kênh, và chuẩn hóa Group Title."""
