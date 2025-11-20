@@ -31,7 +31,7 @@ SOURCES = [
      "In The Box"),
     
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
-     r'"Quốc Tế"|"Cinema World"', 
+     r'"Cinema World"', 
      "Nhóm Kênh Quốc Tế"),
     
 
