@@ -4,7 +4,7 @@ name: Auto Update MIN (Python) 🔄
 on:
   # Chạy mỗi 1 giờ
   schedule:
-    - cron: '*/5 * * * *' 
+    - cron: '0 * * * *' 
   workflow_dispatch: {}
 
 env:
