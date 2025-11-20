@@ -3,6 +3,14 @@ import re
 import os
 from datetime import datetime
 
+# ------------------Cấu hình EPG-------------
+# Định nghĩa các nguồn EPG
+EPG_TVG_URLS = [
+    "https://vnepg.site/epg.xml",
+    "https://lichphatsong.site/schedule/epg.xml.gz",
+# Nối các URL và phân tách bằng dấu (;)
+    EPG_URL_STRING=";".join(EPG_TVG_URLS)
+
 # ----------------- Cấu hình nguồn và đích -----------------
 # Định nghĩa các nguồn cần tải, kèm theo Regex lọc (nếu cần) và Tên Nhóm Chuẩn hóa
 SOURCES = [
@@ -42,7 +50,7 @@ SOURCES = [
 ]
 
 FINAL_OUTPUT_FILE = "MIN.m3u"
-ALL_M3U_LINES = ["#EXTM3U url-tvg="https://vnepg.site/epg.xml"\n"] # Dòng header đầu tiên
+ALL_M3U_LINES = [f"#EXTM3U url-tvg=\"{EPG_URL_STRING}\"\n"] # Dòng header đầu tiên
 
 def fetch_and_process_m3u(url, filter_regex, new_group_title):
     """Tải file M3U, lọc kênh, và chuẩn hóa Group Title."""
