@@ -10,7 +10,7 @@ EPG_TVG_URLS = [
     "https://lichphatsong.site/schedule/epg.xml.gz",
 ]
 # Nối các URL và phân tách bằng dấu (;)
-    EPG_URL_STRING=";".join(EPG_TVG_URLS)
+EPG_URL_STRING=";".join(EPG_TVG_URLS)
 
 # ----------------- Cấu hình nguồn và đích -----------------
 # Định nghĩa các nguồn cần tải, kèm theo Regex lọc (nếu cần) và Tên Nhóm Chuẩn hóa
