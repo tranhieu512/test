@@ -1,0 +1,43 @@
+name: Auto Update MIN (Python) 🔄
+
+# Cấu hình các Trigger (Sự kiện kích hoạt)
+on:
+  # Chạy mỗi 5 phút (Như code cũ của bạn)
+  schedule:
+    - cron: '*/5 * * * *' 
+  workflow_dispatch: {}
+
+env:
+  TZ: Asia/Ho_Chi_Minh
+
+jobs:
+  Update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 
+          
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 📦 Install dependencies
+        # Cần cài đặt thư viện 'requests' để script tải các nguồn M3U
+        run: pip install requests
+        
+      - name: ⚙️ Run Python script (Process M3U)
+        # Chạy script Python để tải, lọc và tạo file MIN.m3u
+        run: python scripts/process_m3u.py
+        
+      - name: ⏱️ GetTime for Commit Message
+        run: echo "DATE=$(date +'%Y-%m-%d %H:%M:%S GMT+7')" >> $GITHUB_ENV
+        
+      # Bước này thay thế hoàn toàn cho bước 'Clean' và 'Push' phức tạp cũ
+      - name: ⬆️ Commit and Push Updated M3U
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: MIN.m3u
+          commit_message: "Auto Update in ${{ env.DATE }}!✨MIN✨!"
