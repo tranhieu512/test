@@ -30,7 +30,6 @@ SOURCES = [
 
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'"SCTV"', # Chỉ giữ SCTV
-     r'tvg-id="SCTV4K"', # Loại trừ SCTV15
      "Nhóm Kênh SCTV"),
 
     ("https://raw.githubusercontent.com/kupjta/iptv/main/kupjtv.m3u", 
