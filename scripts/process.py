@@ -59,7 +59,7 @@ SOURCES = [
 ]
 
 # FINAL_OUTPUT_FILE = "MIN.m3u" # Đã ẩn xuất file m3u
-FINAL_TEXT_FILE = "MIN.txt"
+FINAL_TEXT_FILE = "min"
 ALL_M3U_LINES = [f"#EXTM3U url-tvg=\"{EPG_URL_STRING}\"\n"] # Dòng header đầu tiên
 
 STATIC_CHANNELS=[
