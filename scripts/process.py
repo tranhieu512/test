@@ -62,42 +62,6 @@ SOURCES = [
 FINAL_TEXT_FILE = "min"
 ALL_M3U_LINES = [f"#EXTM3U url-tvg=\"{EPG_URL_STRING}\"\n"] # Dòng header đầu tiên
 
-STATIC_CHANNELS=[
-    '#EXTINF:-1 group-title="TVB" tvg-logo="https://tvbaw-na.s3.us-west-1.amazonaws.com/hb/TVB%20Vietnam%20Banner_Side.jpg", TVB VIỆT NAM',
-    'https://amg01868-amg01868c3-tvbanywhere-us-4491.playouts.now.amagi.tv/playlist1080p.m3u8',
-    
-    '#EXTINF:-1 tvg-id="bbcearth" group-title="Quốc tế" tvg-logo="https://i.ytimg.com/vi/0jFG4yuzMRo/maxresdefault.jpg", BBC Earth',
-    '#EXTVLCOPT:http-user-agent=Dalvik/2.1.0',
-    '#KODIPROP:inputstream.adaptive.manifest_type=mpd',
-    '#KODIPROP:inputstream.adaptive.license_type=clearkey',
-    '#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"8/oP4805pS9O79Nv9xYeiQ","kid":"UBSUGixCN5iAte33IwTBZQ"}],"type":"temporary"}',
-    'https://s7772.cdn.mytvnet.vn/pkg20/live_dzones/bbcearth.smil/manifest.mpd',
-    
-    '#EXTINF:-1 tvg-id="discoveryasiahd" group-title="Quốc tế" tvg-logo="https://astromedia.com.my/wp-content/uploads/2024/01/Discovery-Asia.png",Discovery Asia',
-    '#EXTVLCOPT:http-user-agent=Dalvik/2.1.0',
-    '#KODIPROP:inputstream.adaptive.manifest_type=mpd',
-    '#KODIPROP:inputstream.adaptive.license_type=clearkey',
-    '#KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"eI4oNfuYVortL0e73AkVFQ", "kid":"k0kHsTS+OWOmJjpFOEaSTA" },{ "kty":"oct", } ], "type":"temporary" }',
-    'https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/dscasia.smil/manifest.mpd',
-    
-    '#EXTINF:-1 tvg-id="axnhd" group-title="Quốc tế" tvg-logo="https://i.imgur.com/Rwm7Lod.png",AXN',
-    '#EXTVLCOPT:http-user-agent=Dalvik/2.1.0',
-    '#KODIPROP:inputstream.adaptive.manifest_type=mpd',
-    '#KODIPROP:inputstream.adaptive.license_type=clearkey',
-    '#KODIPROP:inputstream.adaptive.license_key={"keys":[ { "kty":"oct", "k":"bxwJwDXqs2Mj1g0UVNs9IA", "kid":"nSn4fv3sPJ+rNo9ySmKtDg" } ], "type":"temporary"}',
-    'https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/axn.smil/manifest.mpd',
-    
-    '#EXTINF:0 tvg-id="tlchd" group-title="Quốc tế" tvg-logo="https://i.imgur.com/ZStxdQI.png",TLC',
-    'http://125hvt.ddns.net:21585/tlc/index.m3u8',
-
-    '#EXTINF:-1 tvg-id="fashionhd" group-title="Quốc tế" tvg-logo="https://m.media-amazon.com/images/I/91B05VQC2kL.png",Fashion TV',
-    '#KODIPROP:inputstream.adaptive.manifest_type=mpd',
-    '#KODIPROP:inputstream.adaptive.license_type=clearkey',
-    '#KODIPROP:inputstream.adaptive.license_key={"keys":[ { "kty":"oct", "k":"MMNhPpsG4PfMIBAU8xv12A", "kid":"wdnyVwECNQi/pnN+OoxwAQ" } ], "type":"temporary"}',
-    'https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/ftv.smil/manifest.mpd',
-
-]
-
 def fetch_and_process_m3u(url, filter_regex, exclude_regex, new_group_title):
     """Tải file M3U, lọc kênh, lại trừ kênh và chuẩn hóa Group Title."""
     print(f"--- Đang xử lý nguồn: {url}")
@@ -177,11 +141,11 @@ if __name__ == "__main__":
         channel_list = fetch_and_process_m3u(url, regex_keep, regex_exclude, group)
         ALL_M3U_LINES.extend(channel_list)
     # 2. THÊM KÊNH CỐ ĐỊNH (Thực hiện sau, ở cuối danh sách)
-    print(f"\n✅ Đang thêm {len(STATIC_CHANNELS) // 2} kênh cố định vào cuối danh sách...")
+    #print(f"\n✅ Đang thêm {len(STATIC_CHANNELS) // 2} kênh cố định vào cuối danh sách...")
     
     # ❗️ Đảm bảo dòng này thẳng hàng với các dòng xử lý chính khác
-    temp_static_content = [line + '\n' for line in STATIC_CHANNELS] 
-    ALL_M3U_LINES.extend(temp_static_content)
+    #temp_static_content = [line + '\n' for line in STATIC_CHANNELS] 
+    #ALL_M3U_LINES.extend(temp_static_content)
         
     # 3. Xóa các dòng trắng thừa
     final_content = [line for line in ALL_M3U_LINES if line.strip()]
