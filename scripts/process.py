@@ -202,8 +202,8 @@ if __name__ == "__main__":
     
     # 7. Ghi ra file MIN.txt
     try:
-        with open(FINAL_OUTPUT_FILE, 'w', encoding='utf-8') as f:
+        with open(FINAL_TEXT_FILE, 'w', encoding='utf-8') as f:
             f.write(text_content_string)
-        print(f"\n✅ Tổng hợp thành công {len(final_content)} dòng vào {FINAL_OUTPUT_FILE}")
+        print(f"\n✅ Tổng hợp thành công {len(final_content)} dòng vào {FINAL_TEXT_FILE}")
     except Exception as e:
         print(f"❌ Lỗi khi ghi file TXT: {e}")
