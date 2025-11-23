@@ -59,6 +59,7 @@ SOURCES = [
 ]
 
 FINAL_OUTPUT_FILE = "MIN.m3u"
+FINAL_TEXT_FILE = "MIN.txt"
 ALL_M3U_LINES = [f"#EXTM3U url-tvg=\"{EPG_URL_STRING}\"\n"] # Dòng header đầu tiên
 
 STATIC_CHANNELS=[
@@ -173,8 +174,8 @@ def fetch_and_process_m3u(url, filter_regex, exclude_regex, new_group_title):
 if __name__ == "__main__":
     # 1. XỬ LÝ CÁC NGUỒN ĐỘNG (Thực hiện trước)
     for url, regex_keep, regex_exclude, group in SOURCES:
-        channel_list = fetch_and_process_m3u(url, regex_keep, regex_exclude, group)
-        ALL_M3U_LINES.extend(channel_list)
+        [span_0](start_span)channel_list = fetch_and_process_m3u(url, regex_keep, regex_exclude, group)[span_0](end_span)
+        [span_1](start_span)ALL_M3U_LINES.extend(channel_list)[span_1](end_span)
     # 2. THÊM KÊNH CỐ ĐỊNH (Thực hiện sau, ở cuối danh sách)
     print(f"\n✅ Đang thêm {len(STATIC_CHANNELS) // 2} kênh cố định vào cuối danh sách...")
     
@@ -183,11 +184,26 @@ if __name__ == "__main__":
     ALL_M3U_LINES.extend(temp_static_content)
         
     # 3. Xóa các dòng trắng thừa
-    final_content = [line for line in ALL_M3U_LINES if line.strip()]
+    [span_2](start_span)final_content = [line for line in ALL_M3U_LINES if line.strip()][span_2](end_span)
+
+    # 4. Chuyển list các dòng thành một chuỗi duy nhất để dễ dàng xử lý
+    content_string = "".join(final_content)
+
+    # 5. Ghi ra file MIN.m3u
+    try:
+        [span_3](start_span)with open(FINAL_OUTPUT_FILE, 'w', encoding='utf-8') as f:[span_3](end_span)
+            f.write(content_string)
+        [span_4](start_span)print(f"\n✅ Tổng hợp thành công {len(final_content)} dòng vào {FINAL_OUTPUT_FILE}")[span_4](end_span)
+    except Exception as e:
+        [span_5](start_span)print(f"❌ Lỗi khi ghi file: {e}")[span_5](end_span)
     
+    # 6. Tạo nội dung cho file MIN.txt
+    text_content_string = content_string
+    
+    # 7. Ghi ra file MIN.txt
     try:
         with open(FINAL_OUTPUT_FILE, 'w', encoding='utf-8') as f:
-            f.writelines(final_content)
+            f.write(text_content_string)
         print(f"\n✅ Tổng hợp thành công {len(final_content)} dòng vào {FINAL_OUTPUT_FILE}")
     except Exception as e:
-        print(f"❌ Lỗi khi ghi file: {e}")
+        print(f"❌ Lỗi khi ghi file TXT: {e}")
