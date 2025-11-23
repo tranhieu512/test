@@ -79,7 +79,7 @@ STATIC_CHANNELS=[
     '#KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"eI4oNfuYVortL0e73AkVFQ", "kid":"k0kHsTS+OWOmJjpFOEaSTA" },{ "kty":"oct", } ], "type":"temporary" }',
     'https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/dscasia.smil/manifest.mpd',
     
-    '#EXTINF:-1 tvg-id="axnhd" group-title="Quốc tế" tvg-logo="https://i.imgur.com/Rwm7Lod.png",AXN sv2',
+    '#EXTINF:-1 tvg-id="axnhd" group-title="Quốc tế" tvg-logo="https://i.imgur.com/Rwm7Lod.png",AXN',
     '#EXTVLCOPT:http-user-agent=Dalvik/2.1.0',
     '#KODIPROP:inputstream.adaptive.manifest_type=mpd',
     '#KODIPROP:inputstream.adaptive.license_type=clearkey',
