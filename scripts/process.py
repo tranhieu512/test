@@ -61,6 +61,18 @@ SOURCES = [
 FINAL_OUTPUT_FILE = "MIN.m3u"
 ALL_M3U_LINES = [f"#EXTM3U url-tvg=\"{EPG_URL_STRING}\"\n"] # Dòng header đầu tiên
 
+STATIC_CHANNELS=[
+    '#EXTINF:-1 group-title="TVB" tvg-logo="https://tvbaw-na.s3.us-west-1.amazonaws.com/hb/TVB%20Vietnam%20Banner_Side.jpg", TVB VIỆT NAM',
+    'https://amg01868-amg01868c3-tvbanywhere-us-4491.playouts.now.amagi.tv/playlist1080p.m3u8',
+    '#EXTINF:-1 tvg-id="bbcearth" group-title="Quốc tế" tvg-logo="https://hls.mskycdn.online/logo/bbcearth.png", BBC Earth',
+    '#EXTVLCOPT:http-user-agent=Dalvik/2.1.0',
+    '#KODIPROP:inputstream.adaptive.manifest_type=mpd',
+    '#KODIPROP:inputstream.adaptive.license_type=clearkey',
+    '#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"8/oP4805pS9O79Nv9xYeiQ","kid":"UBSUGixCN5iAte33IwTBZQ"}],"type":"temporary"}',
+    'https://s7772.cdn.mytvnet.vn/pkg20/live_dzones/bbcearth.smil/manifest.mpd',
+
+]
+
 def fetch_and_process_m3u(url, filter_regex, exclude_regex, new_group_title):
     """Tải file M3U, lọc kênh, lại trừ kênh và chuẩn hóa Group Title."""
     print(f"--- Đang xử lý nguồn: {url}")
@@ -135,11 +147,18 @@ def fetch_and_process_m3u(url, filter_regex, exclude_regex, new_group_title):
     return processed_lines
 # ----------------- Thực thi chính -----------------
 if __name__ == "__main__":
+    # 1. XỬ LÝ CÁC NGUỒN ĐỘNG (Thực hiện trước)
     for url, regex_keep, regex_exclude, group in SOURCES:
         channel_list = fetch_and_process_m3u(url, regex_keep, regex_exclude, group)
         ALL_M3U_LINES.extend(channel_list)
+    # 2. THÊM KÊNH CỐ ĐỊNH (Thực hiện sau, ở cuối danh sách)
+    print(f"\n✅ Đang thêm {len(STATIC_CHANNELS) // 2} kênh cố định vào cuối danh sách...")
+    
+    # ❗️ Đảm bảo dòng này thẳng hàng với các dòng xử lý chính khác
+    temp_static_content = [line + '\n' for line in STATIC_CHANNELS] 
+    ALL_M3U_LINES.extend(temp_static_content)
         
-    # Xóa các dòng trắng thừa
+    # 3. Xóa các dòng trắng thừa
     final_content = [line for line in ALL_M3U_LINES if line.strip()]
     
     try:
