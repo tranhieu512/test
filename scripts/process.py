@@ -22,11 +22,13 @@ SOURCES = [
      "Nhóm Kênh VTV"),
      
     ("https://raw.githubusercontent.com/kupjta/iptv/main/kupjtv.m3u", 
-     r'"HTV"|"HTVC"', 
+     r'"HTV"|"HTVC"',
+     None, # <--Không loại trừ
      "Nhóm Kênh HTV/HTVC"),
      
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
-     r'"VTVcab"', 
+     r'"VTVcab"',
+     None, # <--Không loại trừ
      "Nhóm Kênh VTVcab"),
 
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
@@ -35,19 +37,23 @@ SOURCES = [
      "Nhóm Kênh SCTV"),
 
     ("https://raw.githubusercontent.com/kupjta/iptv/main/kupjtv.m3u", 
-     r'"Địa phương"', 
+     r'"Địa phương"',
+     None, # <--Không loại trừ
      "Nhóm Kênh Địa phương"),
     
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
-     r'"📦| In The Box"', 
+     r'"📦| In The Box"',
+     None, # <--Không loại trừ
      "In The Box"),
     
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'tvg-id="hbohd"|tvg-id="cinemaxhd"|tvg-id="cinemaworldhd"|tvg-id="boomerang"|tvg-id="cartoonhd"|tvg-id="dreamworks"|tvg-id="bbclifestyle"|tvg-id="cbeebies"|tvg-id="bloomberg"|tvg-id="cnn"|tvg-id="bbcworldnews"|tvg-id="discoveryhd"|tvg-id="dmax"|tvg-id="warnertvhd"', 
+     None, # <--Không loại trừ
      "Nhóm Kênh Quốc Tế"),
 
      ("https://raw.githubusercontent.com/kupjta/iptv/main/kupjtv.m3u", 
      r'tvg-id="davinci"|tvg-id="kixhd"|tvg-id="hgtv"|tvg-id="historyhd"|tvg-id="afnhd"|tvg-id="outdoorhd"|tvg-id="tlchd"|tvg-id="cna"|tvg-id="cnbc"|tvg-id="dw"|tvg-id="france24eng"|tvg-id="tv5monde"|tvg-id="nhkworld"|tvg-id="arirang"|tvg-id="kbsworld"', 
+     None, # <--Không loại trừ
      "Nhóm Kênh Quốc Tế"),
 
 ]
