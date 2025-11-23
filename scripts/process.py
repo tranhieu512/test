@@ -52,7 +52,7 @@ SOURCES = [
      "Nhóm Kênh Quốc Tế"),
 
      ("https://raw.githubusercontent.com/kupjta/iptv/main/kupjtv.m3u", 
-     r'tvg-id="davinci"|tvg-id="kixhd"|tvg-id="hgtv"|tvg-id="historyhd"|tvg-id="afnhd"|tvg-id="outdoorhd"|tvg-id="tlchd"|tvg-id="cna"|tvg-id="cnbc"|tvg-id="dw"|tvg-id="france24eng"|tvg-id="tv5monde"|tvg-id="nhkworld"|tvg-id="arirang"|tvg-id="kbsworld"', 
+     r'tvg-id="davinci"|tvg-id="kixhd"|tvg-id="hgtv"|tvg-id="historyhd"|tvg-id="afnhd"|tvg-id="outdoorhd"|tvg-id="cna"|tvg-id="cnbc"|tvg-id="dw"|tvg-id="france24eng"|tvg-id="tv5monde"|tvg-id="nhkworld"|tvg-id="arirang"|tvg-id="kbsworld"', 
      None, # <--Không loại trừ
      "Nhóm Kênh Quốc Tế"),
 
@@ -64,12 +64,36 @@ ALL_M3U_LINES = [f"#EXTM3U url-tvg=\"{EPG_URL_STRING}\"\n"] # Dòng header đầ
 STATIC_CHANNELS=[
     '#EXTINF:-1 group-title="TVB" tvg-logo="https://tvbaw-na.s3.us-west-1.amazonaws.com/hb/TVB%20Vietnam%20Banner_Side.jpg", TVB VIỆT NAM',
     'https://amg01868-amg01868c3-tvbanywhere-us-4491.playouts.now.amagi.tv/playlist1080p.m3u8',
+    
     '#EXTINF:-1 tvg-id="bbcearth" group-title="Quốc tế" tvg-logo="https://hls.mskycdn.online/logo/bbcearth.png", BBC Earth',
     '#EXTVLCOPT:http-user-agent=Dalvik/2.1.0',
     '#KODIPROP:inputstream.adaptive.manifest_type=mpd',
     '#KODIPROP:inputstream.adaptive.license_type=clearkey',
     '#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"8/oP4805pS9O79Nv9xYeiQ","kid":"UBSUGixCN5iAte33IwTBZQ"}],"type":"temporary"}',
     'https://s7772.cdn.mytvnet.vn/pkg20/live_dzones/bbcearth.smil/manifest.mpd',
+    
+    '#EXTINF:-1 tvg-id="discoveryasiahd" group-title="Quốc tế" tvg-logo="https://hls.mskycdn.online/logo/discoveryasiahd.png",Discovery Asia',
+    '#EXTVLCOPT:http-user-agent=Dalvik/2.1.0',
+    '#KODIPROP:inputstream.adaptive.manifest_type=mpd',
+    '#KODIPROP:inputstream.adaptive.license_type=clearkey',
+    '#KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"eI4oNfuYVortL0e73AkVFQ", "kid":"k0kHsTS+OWOmJjpFOEaSTA" },{ "kty":"oct", } ], "type":"temporary" }',
+    'https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/dscasia.smil/manifest.mpd',
+    
+    '#EXTINF:-1 tvg-id="axnhd" group-title="Quốc tế" tvg-logo="https://i.imgur.com/Rwm7Lod.png",AXN sv2',
+    '#EXTVLCOPT:http-user-agent=Dalvik/2.1.0',
+    '#KODIPROP:inputstream.adaptive.manifest_type=mpd',
+    '#KODIPROP:inputstream.adaptive.license_type=clearkey',
+    '#KODIPROP:inputstream.adaptive.license_key={"keys":[ { "kty":"oct", "k":"bxwJwDXqs2Mj1g0UVNs9IA", "kid":"nSn4fv3sPJ+rNo9ySmKtDg" } ], "type":"temporary"}',
+    'https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/axn.smil/manifest.mpd',
+    
+    '#EXTINF:0 tvg-id="tlchd" group-title="Quốc tế" tvg-logo="https://i.imgur.com/ZStxdQI.png",TLC',
+    'http://125hvt.ddns.net:21585/tlc/index.m3u8',
+
+    '#EXTINF:-1 tvg-id="fashionhd" group-title="Quốc tế" tvg-logo="https://m.media-amazon.com/images/I/91B05VQC2kL.png",Fashion TV',
+    '#KODIPROP:inputstream.adaptive.manifest_type=mpd',
+    '#KODIPROP:inputstream.adaptive.license_type=clearkey',
+    '#KODIPROP:inputstream.adaptive.license_key={"keys":[ { "kty":"oct", "k":"MMNhPpsG4PfMIBAU8xv12A", "kid":"wdnyVwECNQi/pnN+OoxwAQ" } ], "type":"temporary"}',
+    'https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/ftv.smil/manifest.mpd',
 
 ]
 
