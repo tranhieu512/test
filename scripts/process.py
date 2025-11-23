@@ -36,7 +36,7 @@ SOURCES = [
      r'tvg-id="sctv4k"', # Loại trừ SCTV4K
      "Nhóm Kênh SCTV"),
 
-    ("https://raw.githubusercontent.com/kupjta/iptv/main/kupjtv.m3u", 
+    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'"Địa phương"',
      None, # <--Không loại trừ
      "Nhóm Kênh Địa phương"),
