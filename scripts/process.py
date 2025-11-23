@@ -58,7 +58,7 @@ SOURCES = [
 
 ]
 
-FINAL_OUTPUT_FILE = "MIN.m3u"
+# FINAL_OUTPUT_FILE = "MIN.m3u" # Đã ẩn xuất file m3u
 FINAL_TEXT_FILE = "MIN.txt"
 ALL_M3U_LINES = [f"#EXTM3U url-tvg=\"{EPG_URL_STRING}\"\n"] # Dòng header đầu tiên
 
@@ -189,13 +189,13 @@ if __name__ == "__main__":
     # 4. Chuyển list các dòng thành một chuỗi duy nhất để dễ dàng xử lý
     content_string = "".join(final_content)
 
-    # 5. Ghi ra file MIN.m3u
-    try:
-        with open(FINAL_OUTPUT_FILE, 'w', encoding='utf-8') as f:
-            f.write(content_string)
-        print(f"\n✅ Tổng hợp thành công {len(final_content)} dòng vào {FINAL_OUTPUT_FILE}")
-    except Exception as e:
-        print(f"❌ Lỗi khi ghi file: {e}")
+    # 5. Ghi ra file MIN.m3u # Đã ẩn
+    #try:
+    #    with open(FINAL_OUTPUT_FILE, 'w', encoding='utf-8') as f:
+    #        f.write(content_string)
+    #    print(f"\n✅ Tổng hợp thành công {len(final_content)} dòng vào {FINAL_OUTPUT_FILE}")
+    #except Exception as e:
+    #    print(f"❌ Lỗi khi ghi file: {e}")
     
     # 6. Tạo nội dung cho file MIN.txt
     text_content_string = content_string
