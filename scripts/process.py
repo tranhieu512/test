@@ -15,9 +15,10 @@ EPG_URL_STRING=";".join(EPG_TVG_URLS)
 # ----------------- Cấu hình nguồn và đích -----------------
 # Định nghĩa các nguồn cần tải, kèm theo Regex lọc (nếu cần) và Tên Nhóm Chuẩn hóa
 SOURCES = [
-    # (URL, Regex lọc (giữ lại dòng khớp + 1 dòng kế tiếp), Tên nhóm chuẩn hóa mới)
+    # (URL, Regex lọc (giữ lại), Regex loại trừ, Tên nhóm chuẩn hóa mới)
     ("https://raw.githubusercontent.com/kupjta/iptv/main/kupjtv.m3u", 
-     r'"VTV"', 
+     r'"VTV"',
+     None, # <--Không loại trừ
      "Nhóm Kênh VTV"),
      
     ("https://raw.githubusercontent.com/kupjta/iptv/main/kupjtv.m3u", 
@@ -30,6 +31,7 @@ SOURCES = [
 
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'"SCTV"', # Chỉ giữ SCTV
+     r'tvg-id="sctv4k"', # Loại trừ SCTV4K
      "Nhóm Kênh SCTV"),
 
     ("https://raw.githubusercontent.com/kupjta/iptv/main/kupjtv.m3u", 
@@ -53,8 +55,8 @@ SOURCES = [
 FINAL_OUTPUT_FILE = "MIN.m3u"
 ALL_M3U_LINES = [f"#EXTM3U url-tvg=\"{EPG_URL_STRING}\"\n"] # Dòng header đầu tiên
 
-def fetch_and_process_m3u(url, filter_regex, new_group_title):
-    """Tải file M3U, lọc kênh, và chuẩn hóa Group Title."""
+def fetch_and_process_m3u(url, filter_regex, exclude_regex, new_group_title):
+    """Tải file M3U, lọc kênh, lại trừ kênh và chuẩn hóa Group Title."""
     print(f"--- Đang xử lý nguồn: {url}")
     try:
         response = requests.get(url, timeout=10)
@@ -78,6 +80,10 @@ def fetch_and_process_m3u(url, filter_regex, new_group_title):
             
         # 2. Lọc kênh: Kiểm tra xem dòng EXTINF có khớp với Regex lọc không
         if re.search(filter_regex, line):
+            # Loại trừ kênh
+            if exclude_regex and re.search(exclude_regex, line): # Nếu có Regex loại trừ và kênh khớp với nó, thì bỏ qua kênh này
+                i += 1
+                continue # Bỏ qua vòng lặp hiện tại, chuyển sang dòng #EXTINF tiếp theo
         # 3. Chuẩn hóa Group Title
             line = re.sub(r'group-title="[^"]*"', f'group-title="{new_group_title}"', line)
             
@@ -123,8 +129,8 @@ def fetch_and_process_m3u(url, filter_regex, new_group_title):
     return processed_lines
 # ----------------- Thực thi chính -----------------
 if __name__ == "__main__":
-    for url, regex, group in SOURCES:
-        channel_list = fetch_and_process_m3u(url, regex, group)
+    for url, regex_keep, regex_exclude, group in SOURCES:
+        channel_list = fetch_and_process_m3u(url, regex_keep, regex_exclude, group)
         ALL_M3U_LINES.extend(channel_list)
         
     # Xóa các dòng trắng thừa
