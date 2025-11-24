@@ -33,7 +33,7 @@ SOURCES = [
 
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'"SCTV"', # Chỉ giữ SCTV
-     r'tvg-id="sctv4k"', # Loại trừ SCTV4K
+     None, # <--Không loại trừ 
      "Nhóm Kênh SCTV"),
 
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
@@ -42,20 +42,15 @@ SOURCES = [
      "Nhóm Kênh Địa phương"),
     
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
-     r'"📦| In The Box"',
+     r'"🌐| Thiết yếu"',
      None, # <--Không loại trừ
-     "In The Box"),
-    
+     "Nhóm Kênh Thiết yếu"),
+
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
-     r'tvg-id="hbohd"|tvg-id="cinemaxhd"|tvg-id="cinemaworldhd"|tvg-id="boomerang"|tvg-id="cartoonhd"|tvg-id="dreamworks"|tvg-id="bbclifestyle"|tvg-id="cbeebies"|tvg-id="bloomberg"|tvg-id="cnn"|tvg-id="bbcworldnews"|tvg-id="discoveryhd"|tvg-id="dmax"|tvg-id="warnertvhd"', 
+     r'"LIVE EVENTS 🔴"',
      None, # <--Không loại trừ
-     "Nhóm Kênh Quốc Tế"),
-
-     ("https://raw.githubusercontent.com/kupjta/iptv/main/kupjtv.m3u", 
-     r'tvg-id="davinci"|tvg-id="kixhd"|tvg-id="hgtv"|tvg-id="historyhd"|tvg-id="afnhd"|tvg-id="outdoorhd"|tvg-id="cna"|tvg-id="cnbc"|tvg-id="dw"|tvg-id="france24eng"|tvg-id="tv5monde"|tvg-id="nhkworld"|tvg-id="arirang"|tvg-id="kbsworld"', 
-     None, # <--Không loại trừ
-     "Nhóm Kênh Quốc Tế"),
-
+     "LIVE EVENTS"),
+    
 ]
 
 # FINAL_OUTPUT_FILE = "MIN.m3u" # Đã ẩn xuất file m3u
