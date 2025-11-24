@@ -21,8 +21,8 @@ SOURCES = [
      None, # <--Không loại trừ
      "Nhóm Kênh VTV"),
      
-    ("https://raw.githubusercontent.com/thoike84/iptv-vn/refs/heads/main/phattai84.txt", 
-     r'"🇻🇳| HTV"',
+    ("https://raw.githubusercontent.com/dovietsy/dethich/refs/heads/main/dethichbotay.txt", 
+     r'"💛| HTV"',
      None, # <--Không loại trừ
      "Nhóm Kênh HTV/HTVC"),
      
