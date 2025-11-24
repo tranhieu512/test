@@ -16,12 +16,12 @@ EPG_URL_STRING=";".join(EPG_TVG_URLS)
 # Định nghĩa các nguồn cần tải, kèm theo Regex lọc (nếu cần) và Tên Nhóm Chuẩn hóa
 SOURCES = [
     # (URL, Regex lọc (giữ lại), Regex loại trừ, Tên nhóm chuẩn hóa mới)
-    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
+    ("https://raw.githubusercontent.com/kupjta/iptv/refs/heads/main/kupjtv.m3u", 
      r'"VTV"',
      None, # <--Không loại trừ
      "Nhóm Kênh VTV"),
      
-    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
+    ("https://raw.githubusercontent.com/kupjta/iptv/refs/heads/main/kupjtv.m3u", 
      r'"HTV"|"HTVC"',
      None, # <--Không loại trừ
      "Nhóm Kênh HTV/HTVC"),
@@ -36,15 +36,15 @@ SOURCES = [
      None, # <--Không loại trừ 
      "Nhóm Kênh SCTV"),
 
-    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
+    ("https://raw.githubusercontent.com/kupjta/iptv/refs/heads/main/kupjtv.m3u", 
      r'"Địa phương"',
      None, # <--Không loại trừ
      "Nhóm Kênh Địa phương"),
     
-    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
-     r'"🌐| Thiết yếu"',
-     None, # <--Không loại trừ
-     "Nhóm Kênh Thiết yếu"),
+    #("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
+     #r'"🌐| Thiết yếu"',
+     #None, # <--Không loại trừ
+     #"Nhóm Kênh Thiết yếu"),
 
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'"LIVE EVENTS 🔴"',
