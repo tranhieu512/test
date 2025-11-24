@@ -20,6 +20,11 @@ SOURCES = [
      r'"VTV"',
      None, # <--Không loại trừ
      "Nhóm Kênh VTV"),
+
+    ("https://raw.githubusercontent.com/vanxuantai/IPTV-tai/refs/heads/main/iptv.m3u?fbclid=IwZXh0bgNhZW0CMTEAAR7KxKuITBzUmsUWJI_yBZZCU5uwF9TSt1H1xUwgMinwC9wy-", 
+     r'"VTV"',
+     None, # <--Không loại trừ
+     "Nhóm Kênh VTV"),
      
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'"HTV"|"HTVC"',
