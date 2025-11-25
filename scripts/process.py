@@ -46,6 +46,11 @@ SOURCES = [
      None, # <--Không loại trừ
      "Nhóm Kênh Thiết yếu"),
 
+    ("https://raw.githubusercontent.com/kupjta/iptv/refs/heads/main/kupjtv.m3u", 
+     r'tvg-id="anvienhd"',
+     None, # <--Không loại trừ
+     "Nhóm Kênh Thiết yếu"),
+
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'"LIVE EVENTS 🔴"',
      None, # <--Không loại trừ
