@@ -16,17 +16,17 @@ EPG_URL_STRING=";".join(EPG_TVG_URLS)
 # Định nghĩa các nguồn cần tải, kèm theo Regex lọc (nếu cần) và Tên Nhóm Chuẩn hóa
 SOURCES = [
     # (URL, Regex lọc (giữ lại), Regex loại trừ, Tên nhóm chuẩn hóa mới)
-    ("https://raw.githubusercontent.com/kupjta/iptv/refs/heads/main/kupjtv.m3u", 
+    ("https://raw.githubusercontent.com/tranhieu512/test/refs/heads/main/min1", 
      r'"VTV"',
      None, # <--Không loại trừ
      "Nhóm Kênh VTV"),
      
-    ("https://raw.githubusercontent.com/dovietsy/dethich/refs/heads/main/dethichbotay.txt", 
-     r'"💛| HTV"',
+    ("https://raw.githubusercontent.com/tranhieu512/test/refs/heads/main/min1", 
+     r'"HTV"',
      None, # <--Không loại trừ
      "Nhóm Kênh HTV/HTVC"),
      
-    ("https://raw.githubusercontent.com/vanxuantai/IPTV-tai/refs/heads/main/iptv.m3u", 
+    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'"VTVcab"',
      None, # <--Không loại trừ
      "Nhóm Kênh VTVcab"),
@@ -36,21 +36,26 @@ SOURCES = [
      None, # <--Không loại trừ 
      "Nhóm Kênh SCTV"),
 
-    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
+    ("https://raw.githubusercontent.com/tranhieu512/test/refs/heads/main/min1", 
      r'"Địa phương"',
      None, # <--Không loại trừ
      "Nhóm Kênh Địa phương"),
     
-    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
-     r'"🌐| Thiết yếu"',
+    ("https://raw.githubusercontent.com/tranhieu512/test/refs/heads/main/min1", 
+     r'"Kênh Thiết yếu"',
      None, # <--Không loại trừ
      "Nhóm Kênh Thiết yếu"),
 
-    ("https://raw.githubusercontent.com/kupjta/iptv/refs/heads/main/kupjtv.m3u", 
-     r'tvg-id="anvienhd"',
+    ("https://raw.githubusercontent.com/vanxuantai/IPTV-tai/refs/heads/main/iptv.m3u", 
+     r'tvg-id="onviegiaitri"|tvg-id="onphimviet"|tvg-id="onechannel"',
      None, # <--Không loại trừ
-     "Nhóm Kênh Thiết yếu"),
+     "Nhóm Kênh test"),
 
+    ("https://xem.hoiquan.click/", 
+     r'tvg-id="onviegiaitri"|tvg-id="onphimviet"|tvg-id="onechannel"',
+     None, # <--Không loại trừ
+     "Nhóm Kênh test"),
+    
     #("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      #r'"LIVE EVENTS 🔴"',
      #None, # <--Không loại trừ
