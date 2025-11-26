@@ -51,8 +51,8 @@ SOURCES = [
      None, # <--Không loại trừ
      "Nhóm Kênh test"),
 
-    ("https://xem.hoiquan.click/", 
-     r'tvg-id="onviegiaitri"|tvg-id="onphimviet"|tvg-id="onechannel"',
+    ("https://xem.hoiquan.click", 
+     r'tvg-id="vtvcab-1-vie-giai-tri-hd"|tvg-id="vtvcab-2-phim-viet-hd"|tvg-id="vtvcab-5-e-channel-hd"',
      None, # <--Không loại trừ
      "Nhóm Kênh test"),
     
