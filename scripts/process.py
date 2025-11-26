@@ -42,7 +42,7 @@ SOURCES = [
      "Nhóm Kênh Địa phương"),
     
     ("https://raw.githubusercontent.com/tranhieu512/test/refs/heads/main/min1", 
-     r'"Kênh Thiết yếu"',
+     r'"Kênh thiết yếu"',
      None, # <--Không loại trừ
      "Nhóm Kênh Thiết yếu"),
 
