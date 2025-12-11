@@ -68,15 +68,11 @@ https://live.fptplay53.net/epzhd1/htvcdulich_vhls.smil/chunklist.m3u8
 #EXTINF:-1 tvg-id="onviegiaitri" group-title="Nhóm Kênh VTVcab" tvg-logo="https://i.ytimg.com/vi/fyT_xa-g-Pk/hq720.jpg", ON Vie Giải Trí
 https://freem3u.xyz/api/live/play.m3u8?vid=180
 #EXTINF:-1 tvg-id="onphimviet" group-title="Nhóm Kênh VTVcab" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ONPHIMVIET.jpg/1600px-ONPHIMVIET.jpg" catchup="default" catchup-days="2" catchup-source="http://sv.cvtv.xyz:3000/mytvod.m3u8?id=198&time=${start}&offset=${duration}", ON Phim Việt
-http://khaitv.giize.com:1979/mytv/new/get.php?id=198
-#EXTINF:-1 tvg-id="onsports" group-title="Nhóm Kênh VTVcab" tvg-logo=" https://imgvlive.vtvcab.vn/720X405/fd8acdaa-f6c8-4101-bb3b-660a83d9eaf4.jpg?auto=format&fit=max&w=640", ON Sport HD
-http://khaitv.giize.com:1979/mytv/new/get.php?id=200
+https://toiyeuvietnam.dpdns.org/CoBan/vtvcab-2-phim-viet-hd/TuyetDoiKhongKinhDoanh.m3u8
 #EXTINF:-1 tvg-id="onmovies" group-title="Nhóm Kênh VTVcab" tvg-logo="https://i.ytimg.com/vi/NZablQM-L9g/maxresdefault.jpg" catchup="default" catchup-days="2" catchup-source="http://sv.cvtv.xyz:3000/mytvod.m3u8?id=435&time=${start}&offset=${duration}", On Movies - You TV
 https://freem3u.xyz/api/live/play.m3u8?vid=181
 #EXTINF:-1 tvg-id="onechannel" group-title="Nhóm Kênh VTVcab" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/13/ONECHANNEL.jpg" catchup="default" catchup-days="2" catchup-source="http://sv.cvtv.xyz:3000/mytvod.m3u8?id=202&time=${start}&offset=${duration}", ON E- Channel
 https://freem3u.xyz/api/live/play.m3u8?vid=182
-#EXTINF:-1 tvg-id="onsportsplus" group-title="Nhóm Kênh VTVcab" tvg-logo="https://imgvlive.vtvcab.vn/720X405/62954f11-54cd-4b09-aedc-52a4c4190b04.jpg?auto=format&fit=max&w=640", ON Sport+ HD
-http://khaitv.giize.com:1979/mytv/new/get.php?id=203
 #EXTINF:-1 tvg-id="ono2tv" group-title="Nhóm Kênh VTVcab" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/16/ONO2TV.jpg" catchup="default" catchup-days="2" catchup-source="http://sv.cvtv.xyz:3000/mytvod.m3u8?id=27&time=${start}&offset=${duration}", On O2TV
 https://freem3u.xyz/api/live/play.m3u8?vid=136
 #EXTINF:-1 tvg-id="onbibi" group-title="Nhóm Kênh VTVcab" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/97/ONBIBI.jpg" catchup="default" catchup-days="2" catchup-source="http://sv.cvtv.xyz:3000/mytvod.m3u8?id=205&time=${start}&offset=${duration}", On BiBi
@@ -89,8 +85,6 @@ https://freem3u.xyz/api/live/play.m3u8?vid=176
 https://freem3u.xyz/api/live/play.m3u8?vid=184
 #EXTINF:-1 tvg-id="onmusic" group-title="Nhóm Kênh VTVcab" tvg-logo="https://img-zlr1.tv360.vn/image1/2023/07/20/10/1689822524259/0f3a4d1ebfaf_640_360.png" catchup="append" catchup-days="2" catchup-source="https://api.vthanhtivi.pw/v1/dvr/vieon/vtvcab15/${start}/${offset}", On Music
 https://freem3u.xyz/api/live/play.m3u8?vid=185
-#EXTINF:-1 tvg-id="onfootball" group-title="Nhóm Kênh VTVcab" tvg-logo="https://imgvlive.vtvcab.vn/720X405/c8574669-704b-4fb0-b3bb-97f4880c542a.jpg?auto=format&fit=max&w=640", ON Football HD
-http://khaitv.giize.com:1979/mytv/new/get.php?id=208
 #EXTINF:-1 tvg-id="ontrending" group-title="Nhóm Kênh VTVcab" tvg-logo="https://i.ibb.co/k1ccQNr/vcab17.webp", ON TRENDING TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
 https://freem3u.xyz/api/live/play.m3u8?vid=186
