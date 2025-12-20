@@ -56,10 +56,10 @@ SOURCES = [
      None, # <--Không loại trừ
      "Nhóm Kênh test"),
     
-    #("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
-     #r'"LIVE EVENTS 🔴"',
-     #None, # <--Không loại trừ
-     #"LIVE EVENTS"),
+    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
+     r'"LIVE EVENTS 🔴"',
+     None, # <--Không loại trừ
+     "LIVE EVENTS"),
     
 ]
 
