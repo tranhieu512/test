@@ -16,12 +16,12 @@ EPG_URL_STRING=";".join(EPG_TVG_URLS)
 # Định nghĩa các nguồn cần tải, kèm theo Regex lọc (nếu cần) và Tên Nhóm Chuẩn hóa
 SOURCES = [
     # (URL, Regex lọc (giữ lại), Regex loại trừ, Tên nhóm chuẩn hóa mới)
-    ("https://raw.githubusercontent.com/tranhieu512/test/refs/heads/main/min1", 
+    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'"VTV"',
      None, # <--Không loại trừ
      "Nhóm Kênh VTV"),
      
-    ("https://raw.githubusercontent.com/tranhieu512/test/refs/heads/main/min1", 
+    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'"HTV"',
      None, # <--Không loại trừ
      "Nhóm Kênh HTV/HTVC"),
