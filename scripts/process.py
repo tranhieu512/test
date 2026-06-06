@@ -31,7 +31,7 @@ SOURCES = [
      None, # <--Không loại trừ
      "Nhóm Kênh VTVcab"),
 
-    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
+    ("https://raw.githubusercontent.com/kupjta/iptv/refs/heads/main/kupjtv.m3u", 
      r'"SCTV"', # Chỉ giữ SCTV
      None, # <--Không loại trừ 
      "Nhóm Kênh SCTV"),
