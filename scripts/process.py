@@ -55,6 +55,11 @@ SOURCES = [
      r'tvg-id="onviegiaitri"|tvg-id="onphimviet"|tvg-id="onechannel"',
      None, # <--Không loại trừ
      "Nhóm Kênh test"),
+
+     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
+     r'tvg-id="sctv1hd"|tvg-id="sctv2hd"|tvg-id="sctv4hd"|tvg-id="sctv14hd"',
+     None, # <--Không loại trừ
+     "Nhóm Kênh test"),
     
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'"LIVE EVENTS 🔴"',
