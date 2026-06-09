@@ -16,15 +16,15 @@ EPG_URL_STRING=";".join(EPG_TVG_URLS)
 # Định nghĩa các nguồn cần tải, kèm theo Regex lọc (nếu cần) và Tên Nhóm Chuẩn hóa
 SOURCES = [
     # (URL, Regex lọc (giữ lại), Regex loại trừ, Tên nhóm chuẩn hóa mới)
-    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
-     r'"VTV"',
-     None, # <--Không loại trừ
-     "Nhóm Kênh VTV"),
+    #("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
+     #r'"VTV"',
+     #None, # <--Không loại trừ
+     #"Nhóm Kênh VTV"),
      
-    ("https://raw.githubusercontent.com/tranhieu512/test/refs/heads/main/min1", 
-     r'"HTV"',
-     None, # <--Không loại trừ
-     "Nhóm Kênh HTV/HTVC"),
+    #("https://raw.githubusercontent.com/tranhieu512/test/refs/heads/main/min1", 
+     #r'"HTV"',
+     #None, # <--Không loại trừ
+     #"Nhóm Kênh HTV/HTVC"),
      
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
      r'"VTVcab"',
@@ -41,30 +41,30 @@ SOURCES = [
      None, # <--Không loại trừ
      "Nhóm Kênh Địa phương"),
     
-    ("https://raw.githubusercontent.com/tranhieu512/test/refs/heads/main/min1", 
-     r'"Kênh thiết yếu"',
-     None, # <--Không loại trừ
-     "Nhóm Kênh Thiết yếu"),
+    #("https://raw.githubusercontent.com/tranhieu512/test/refs/heads/main/min1", 
+     #r'"Kênh thiết yếu"',
+     #None, # <--Không loại trừ
+     #"Nhóm Kênh Thiết yếu"),
 
     ("https://raw.githubusercontent.com/ngvhiem/IPTV/refs/heads/main/IPTV-FPT.m3u", 
      r'"Truyền Hình"',
      None, # <--Không loại trừ
      "Nhóm Kênh FPT"),
 
-    ("https://raw.githubusercontent.com/kupjta/iptv/refs/heads/main/kupjtv.m3u", 
-     r'tvg-id="onviegiaitri"|tvg-id="onphimviet"|tvg-id="onechannel"',
-     None, # <--Không loại trừ
-     "Nhóm Kênh test"),
+    #("https://raw.githubusercontent.com/kupjta/iptv/refs/heads/main/kupjtv.m3u", 
+     #r'tvg-id="onviegiaitri"|tvg-id="onphimviet"|tvg-id="onechannel"',
+     #None, # <--Không loại trừ
+     #"Nhóm Kênh test"),
 
-     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
-     r'tvg-id="sctv1hd"|tvg-id="sctv2hd"|tvg-id="sctv4hd"|tvg-id="sctv14hd"',
-     None, # <--Không loại trừ
-     "Nhóm Kênh test"),
+     #("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
+     #r'tvg-id="sctv1hd"|tvg-id="sctv2hd"|tvg-id="sctv4hd"|tvg-id="sctv14hd"',
+     #None, # <--Không loại trừ
+     #"Nhóm Kênh test"),
     
-    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
-     r'"LIVE EVENTS 🔴"',
-     None, # <--Không loại trừ
-     "LIVE EVENTS"),
+    #("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
+     #r'"LIVE EVENTS 🔴"',
+     #None, # <--Không loại trừ
+     #"LIVE EVENTS"),
     
 ]
 
