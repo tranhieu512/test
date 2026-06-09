@@ -46,10 +46,10 @@ SOURCES = [
      None, # <--Không loại trừ
      "Nhóm Kênh Thiết yếu"),
 
-    #("https://raw.githubusercontent.com/ngvhiem/IPTV/refs/heads/main/IPTV-FPT.m3u", 
-     #r'"Truyền Hình"',
-     #None, # <--Không loại trừ
-     #"Nhóm Kênh FPT"),
+    ("https://raw.githubusercontent.com/ngvhiem/IPTV/refs/heads/main/IPTV-FPT.m3u", 
+     r'"Truyền Hình"',
+     None, # <--Không loại trừ
+     "Nhóm Kênh FPT"),
 
     ("https://raw.githubusercontent.com/kupjta/iptv/refs/heads/main/kupjtv.m3u", 
      r'tvg-id="onviegiaitri"|tvg-id="onphimviet"|tvg-id="onechannel"',
