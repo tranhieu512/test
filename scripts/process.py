@@ -26,7 +26,7 @@ SOURCES = [
      #None, # <--Không loại trừ
      #"Nhóm Kênh HTV/HTVC"),
      
-    ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
+    ("https://raw.githubusercontent.com/kupjta/iptv/refs/heads/main/kupjtv.m3u", 
      r'"VTVcab"',
      None, # <--Không loại trừ
      "Nhóm Kênh VTVcab"),
@@ -36,10 +36,10 @@ SOURCES = [
      None, # <--Không loại trừ 
      "Nhóm Kênh SCTV"),
 
-    ("https://raw.githubusercontent.com/tranhieu512/test/refs/heads/main/min1", 
-     r'"Địa phương"',
-     None, # <--Không loại trừ
-     "Nhóm Kênh Địa phương"),
+    #("https://raw.githubusercontent.com/tranhieu512/test/refs/heads/main/min1", 
+     #r'"Địa phương"',
+     #None, # <--Không loại trừ
+     #"Nhóm Kênh Địa phương"),
     
     #("https://raw.githubusercontent.com/tranhieu512/test/refs/heads/main/min1", 
      #r'"Kênh thiết yếu"',
