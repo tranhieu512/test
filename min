@@ -46,13 +46,13 @@ https://freem3u.xyz/api/live/play.m3u8?vid=188
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Window NT 10.0; Win64; x64)
 https://vpsttt.vietanhtv.top/tv360/tv360.php?id=169
 #EXTINF:-1 tvg-id="sctv1hd" group-title="Nhóm Kênh SCTV" tvg-logo="https://vnepg.site/logos/46.png",SCTV1
-https://liveh12.vtvprime.vn/hls/SCTV1/index.m3u8
+https://hoiquan.dpdns.org/VTVGo/?sctv1
 #EXTINF:-1 tvg-id="sctv2hd" group-title="Nhóm Kênh SCTV" tvg-logo="https://vnepg.site/logos/47.png",SCTV2
 https://freem3u.xyz/api/live/play.m3u8?vid=201
 #EXTINF:-1 tvg-id="sctv3hd" group-title="Nhóm Kênh SCTV" tvg-logo="https://vnepg.site/logos/48.png",SCTV3
 https://hoiquan.dpdns.org/VTVGo/?sctv3
 #EXTINF:-1 tvg-id="sctv4hd" group-title="Nhóm Kênh SCTV" tvg-logo="https://vnepg.site/logos/49.png",SCTV4
-https://liveh12.vtvprime.vn/hls/SCTV4/index.m3u8
+https://hoiquan.dpdns.org/VTVGo/?sctv4
 #EXTINF:-1 tvg-id="sctv6hd" group-title="Nhóm Kênh SCTV" tvg-logo="https://vnepg.site/logos/50.png",SCTV6
 http://live.fptplay53.net/epzhd2/film360_vhls.smil/chunklist.m3u8
 #EXTINF:-1 tvg-id="sctv7hd" group-title="Nhóm Kênh SCTV" tvg-logo="https://vnepg.site/logos/51.png",SCTV7
