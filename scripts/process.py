@@ -27,7 +27,7 @@ SOURCES = [
      #"Nhóm Kênh HTV/HTVC"),
      
     ("https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", 
-     r'"VTVcab HD"',
+     r'"VTVcab"',
      None, # <--Không loại trừ
      "Nhóm Kênh VTVcab"),
 
