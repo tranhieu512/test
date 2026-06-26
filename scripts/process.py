@@ -46,7 +46,7 @@ SOURCES = [
      #None, # <--Không loại trừ
      #"Nhóm Kênh Thiết yếu"),
 
-    ("https://raw.githubusercontent.com/ngvhiem/IPTV/refs/heads/main/IPTV-FPT.m3u", 
+    ("https://raw.githubusercontent.com/ngvhiem/IPTV/refs/heads/main/IPTV.m3u", 
      r'"Truyền Hình"',
      None, # <--Không loại trừ
      "Nhóm Kênh FPT"),
