@@ -6,6 +6,10 @@ https://freem3u.xyz/api/live/play.m3u8?vid=180
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0
 https://vmttv.dpdns.org/tv360/?id=vtvcab-2-phim-viet-hd
 #EXTINF:-1 tvg-id="onsports" group-title="Nhóm Kênh VTVcab" tvg-logo="https://r2.epg.io.vn/2026-09-17/16.png", On Sports 50fps (VTVPrime)
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
 #EXTINF:-1 tvg-id="onmovies" group-title="Nhóm Kênh VTVcab" tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/Logo/refs/heads/main/onmovies.png", On Movies - You TV
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0
 https://freem3u.xyz/api/live/play.m3u8?vid=181
